@@ -1,7 +1,7 @@
 public class DiffBitCounter {
     public int cntBits(int[] A) {
         int sum=0;
-       int  M=10^9+7;
+        int  M=10^9+7;
         for(int i=0;i<A.length;i++){
             for(int j=0;j<A.length;j++){
                 sum=(sum+diffbits(A[i],A[j]))%M;
